@@ -1,0 +1,28 @@
+<div class="image">
+<img src="assets/image.png">
+</div>
+<h1>My IP-QUOTES</h1>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+  <div *ngFor='let quote of quotes;let i =index'>
+    <h2 id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}<h2>
+
+    <div class="click">
+      <button  class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</buttton>
+    </div>
+    <div class="row" *ngIf="quote.showDescription">
+      <app-quotes-details [quotes]='quotes' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
+      <!-- <app-counter-input></app-counter-input> -->
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<p *ngIf='quotes.length > 5'>You have too many quotes</p>src/app/quote-form/quote-form.component.html
