@@ -1,3 +1,5 @@
+import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -13,7 +15,9 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     AppComponent,
     QuotesDetailsComponent,
     QuotesComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    DateCountPipe,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {Quotes} from '../quotes';
+
 @Component({
   selector: 'app-quote',
-  templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  templateUrl: './quotes.component.html',
+  styleUrls: ['./quotes.component.css']
 })
+
 export class QuotesComponent implements OnInit {
   quotes = [];
   completeQuote(isComplete, index) {
