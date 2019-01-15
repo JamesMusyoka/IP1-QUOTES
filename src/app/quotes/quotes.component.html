@@ -1,5 +1,4 @@
 <div class="image">
-    <img src="assets/image.png">
     </div>
     <h1>My Quotes</h1>
     <div class="container">
@@ -20,7 +19,6 @@
           </div>
           <div class="row" *ngIf="quote.showDescription">
             <app-quotes-details [quote]='quote' (isComplete)='deleteQuotes($event,i)'></app-quotes-details>
-            <!-- <app-counter-input></app-counter-input> -->
           </div>
         </div>
       </div>
