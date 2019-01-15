@@ -1,10 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.css"
-body{
-  /* background-color:coral; */
-  /* background-image:url('assets/preview.jpg'); */
-  background-color:coral;
-
-}
+@import "~bootstrap/dist/css/bootstrap.css";
 h1{
   text-align: center;
   text-decoration:underline;
